@@ -6,20 +6,20 @@ This Google Cast demo app shows how to cast a video playlist from a Chrome brows
 ## Setup Instructions
 
 # Pre-requisites
- 1. Get a Chromecast device
- 2. Install appropriate Chrome browser
- 3. Install appropriate Chrome Cast extension
+1. Get a Chromecast device
+2. Install appropriate Chrome browser
+3. Install appropriate Chrome Cast extension
 
- See the developer guide and release notes at https://developers.google.com/cast/ for more details.
+See the developer guide and release notes at https://developers.google.com/cast/ for more details.
  
 # Steps:
- 1. Put all the files on your own server
- 2. Change YOUR_APP_ID to your own in CastVideos.js
- 3. Open a browser and point to your page at http://[YOUR_SERVER_LOCATION]/player_playlist_sender.html
- 4. Click on the "Launch app" button to select a Cast device
- 5. Click on the "Load media" button to load the first item (Big Buck Bunny) + a playlist with 2 items
- 6. Click on the "Play" button to start the first video
- 6. Click on the "Add media to playlist" to add the currently selected media item to the playlist (at the bottom)
+1. Put all the files on your own server
+2. Change YOUR_APP_ID to your own in CastVideos.js
+3. Open a browser and point to your page at http://[YOUR_SERVER_LOCATION]/player_playlist_sender.html
+4. Click on the "Launch app" button to select a Cast device
+5. Click on the "Load media" button to load the first item (Big Buck Bunny) + a playlist with 2 items
+6. Click on the "Play" button to start the first video
+7. Click on the "Add media to playlist" to add the currently selected media item to the playlist (at the bottom)
 
 ##Documentation
 * Cast APIs: http://developers.google.com/cast/docs/chrome_sender
