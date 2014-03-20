@@ -14,7 +14,7 @@ See the developer guide and release notes at https://developers.google.com/cast/
  
 # Steps:
 1. Put all the files on your own server
-2. Change YOUR_APP_ID to your own in CastVideos.js
+2. Change YOUR_APP_ID to your own in playlist_sender.js
 3. Open a browser and point to your page at http://[YOUR_SERVER_LOCATION]/player_playlist_sender.html
 4. Click on the "Launch app" button to select a Cast device
 5. Click on the "Load media" button to load the first item (Big Buck Bunny) + a playlist with 2 items
