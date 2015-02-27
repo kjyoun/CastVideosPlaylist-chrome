@@ -79,6 +79,10 @@ This shows a very simple receiver app to show how you could support video playli
             // Plays the next video in the list
             var playNextVideo = function() {
                 if (playlist && currentVideoIndex < playlist.length - 1) {
+                    // This will notify sender that current media ends
+                    mediaManager.resetMediaElement(
+                        cast.receiver.media.IdleReason.FINISHED);
+
                     currentVideoIndex++;
                     mediaElement.src = playlist[currentVideoIndex].contentId;
                     mediaElement.autoplay = true;
@@ -89,6 +93,10 @@ This shows a very simple receiver app to show how you could support video playli
                     mediaInformation.metadata.images[0] = {
                         url: playlist[currentVideoIndex].image
                     };
+                    // You need to set metadataType to make sender SDK recognize
+                    // this metadata. This value should be based on http://goo.gl/byFH9x
+                    mediaInformation.metadata..metadataType = 1;
+
                     // We use false as we do not want to broadcast the new status yet
                     // we will broadcast manually when the media has been loaded, this
                     // is to be sure the duration has been updated in the media element
